@@ -72,13 +72,15 @@ const nestedArrays = [
   [7, 8, 9],
 ];
 
+const arr = []
 for (const innerArray of nestedArrays) {
   let sum = 0;
   for (const num of innerArray) {
     sum += num;
   }
-  console.log(sum);
+  arr.push(sum)
 }
+console.log(arr)
 
 //10
 const a = 5;
